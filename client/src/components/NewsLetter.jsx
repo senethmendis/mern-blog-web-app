@@ -2,7 +2,10 @@ import React from "react";
 
 export const NewsLetter = () => {
   return (
-    <section className="flex flex-col md:flex-row justify-between py-8 px-5 md:py-20 md:px-10 bg-neutral-800">
+    <section
+      id="service"
+      className="flex flex-col md:flex-row justify-between py-8 px-5 md:py-20 md:px-10 bg-neutral-800"
+    >
       <div>
         <h1 className="text-4xl font-semibold">Subscribe For New Content</h1>
         <p className="py-2">

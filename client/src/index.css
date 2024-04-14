@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .logo {
   @apply font-bold text-3xl;
 }

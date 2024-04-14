@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { blogImg } from "../assets";
+import BlogCard from "../assets/BlogCard";
 
 const API_BASE = "http://localhost:3001";
 
@@ -16,11 +18,15 @@ const BlogPostGrid = () => {
     console.log(blogData);
   }, []);
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
       {blogData.map((blog) => (
-        <div key={blog._id}>
-          <p>{blog.title}</p>
-        </div>
+        <BlogCard
+          key={blog._id}
+          blogImg={blogImg}
+          description={blog.title}
+          timestamp={blog.timestamp}
+          title={blog.title}
+        />
       ))}
     </section>
   );

@@ -6,9 +6,9 @@ POST http://localhost:3001/blog/new
 Content-Type: application/json
 
 {
-    "title":"test title 5",
-    "author":"seneth 5",
-    "description":"somthing somth 5"
+    "title":"test title 6",
+    "author":"seneth 6",
+    "description":"somthing somth 6"
 }
 
 ###

@@ -7,11 +7,11 @@ import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-between py-4">
+    <nav id="home" className="w-full flex justify-between py-4">
       <Logo />
       <ul className="hidden md:flex justify-center items-center gap-6">
         {NavbarItem.map((item) => (
-          <li key={item.id}>
+          <li key={item.id} className="hover:text-white text-neutral-500">
             <a href={item.navlink}> {item.navName} </a>
           </li>
         ))}

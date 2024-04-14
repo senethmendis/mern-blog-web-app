@@ -5,7 +5,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import ArticalBanner from "../components/ArticalBanner";
 
-const Header = () => {
+const Header = ({ isBannerVisible }) => {
   return (
     <>
       <header className="max-w-[1100px] ">
@@ -40,7 +40,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <ArticalBanner />
+      {isBannerVisible && <ArticalBanner />}
     </>
   );
 };

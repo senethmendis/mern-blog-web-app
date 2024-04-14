@@ -12,7 +12,7 @@ export const NewsLetter = () => {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </div>
-      <div className="flex flex-col justify-start md:flex-row md:items-center  gap-4 py-10 md:py-0">
+      <div className="flex flex-col justify-start  md:items-start  gap-4 py-10 md:py-0">
         <div className="flex flex-col ">
           <label htmlFor="search-box" className="ml-3">
             Email

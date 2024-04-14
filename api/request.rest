@@ -13,4 +13,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3001/blog/delete/661bda6618b6d33ce7f72b01
+DELETE http://localhost:3001/blog/delete/661bda2d18b6d33ce7f72afe

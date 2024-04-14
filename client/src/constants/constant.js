@@ -2,7 +2,7 @@ export const NavbarItem = [
   {
     id: 1,
     navName: "Home",
-    navlink: "#home",
+    navlink: "/",
   },
   {
     id: 2,

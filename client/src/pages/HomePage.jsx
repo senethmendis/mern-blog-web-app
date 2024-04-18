@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       <div className="max-w-[1100px] mx-auto lgpx-0  px-4">
-        <Header isBannerVisible={true} />
+        <Header isBannerVisible={true} variableImg={false} />
         <BlogPostGrid />
       </div>
       <NewsLetter />

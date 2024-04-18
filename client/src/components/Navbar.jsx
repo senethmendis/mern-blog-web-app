@@ -1,4 +1,3 @@
-import React from "react";
 import { NavbarItem } from "../constants/constant";
 import { Avatar } from "../assets";
 import { LuBellDot } from "react-icons/lu";

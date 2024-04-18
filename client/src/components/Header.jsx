@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./Navbar";
 import { IoLogoTwitter } from "react-icons/io";
 import { FaYoutube } from "react-icons/fa";
@@ -8,7 +7,7 @@ import ArticalBanner from "../components/ArticalBanner";
 const Header = ({ isBannerVisible }) => {
   return (
     <>
-      <header className="max-w-[1100px] ">
+      <header className="max-w-[1100px] mx-auto">
         <Navbar />
 
         <div className="w-full py-10 px-5 border border-white/15 rounded-2xl ">

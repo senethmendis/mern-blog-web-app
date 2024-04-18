@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "../components/Navbar";
 
 const API_BASE = "http://localhost:3001";
@@ -9,6 +11,8 @@ const AddBlog = () => {
   const [description, setDescription] = useState("");
 
   const [blogData, setBlogData] = useState([]);
+
+  const notify = () => toast("New Blog Added!");
 
   async function getBlogData() {
     fetch(API_BASE + "/blogs")
@@ -43,9 +47,11 @@ const AddBlog = () => {
     setDescription("");
   }
 
-  const imageHandler = (e) => {
-    setImage(e.target.files[0]);
-  };
+  function handleForm(e) {
+    e.preventDefault();
+    addBlog();
+    notify();
+  }
 
   return (
     <div className="w-full px-4">
@@ -53,12 +59,22 @@ const AddBlog = () => {
 
       <section className="flex justify-center items-center py-10">
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            addBlog();
-          }}
+          onSubmit={handleForm}
           className="w-full md:w-[450px] flex flex-col gap-4"
         >
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            transition:Bounce
+          />
           <input
             type="text"
             value={title}

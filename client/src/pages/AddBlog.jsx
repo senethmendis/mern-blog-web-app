@@ -49,8 +49,7 @@ const AddBlog = () => {
 
   function handleForm(e) {
     e.preventDefault();
-    addBlog();
-    notify();
+    addBlog().then(notify());
   }
 
   return (
@@ -93,8 +92,6 @@ const AddBlog = () => {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             className="add-blog-form"
-            name=""
-            id=""
             cols="30"
             rows="10"
           ></textarea>

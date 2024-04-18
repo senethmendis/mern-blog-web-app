@@ -1,11 +1,11 @@
 import React from "react";
 import { ArticalBg } from "../assets";
 
-const ArticalBanner = () => {
+const ArticalBanner = ({ variableImg, imgPath }) => {
   return (
-    <section className="w-full h-[400px] object-cover py-5">
+    <section className="max-w-[1100px] mx-auto h-[400px] object-cover py-5">
       <img
-        src={ArticalBg}
+        src={variableImg ? imgPath : ArticalBg}
         alt="artical bg"
         className="w-full h-full bg-cover object-cover rounded-3xl"
       />

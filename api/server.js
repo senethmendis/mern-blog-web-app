@@ -2,9 +2,19 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const multer = require("multer");
-const path = require("path");
 
 const app = express();
+// const upload = multer({ dest: "uploads/" });
+// const storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, "/tmp/my-uploads");
+//   },
+//   filename: function (req, file, cb) {
+//     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
+//     cb(null, file.fieldname + "-" + uniqueSuffix);
+//   },
+// });
+// const upload = multer({ storage });
 
 app.use(express.json());
 app.use(cors());
@@ -31,6 +41,10 @@ app.post("/blog/new", (req, res) => {
   res.json(blog);
   console.log(blog);
 });
+
+// app.post("/blog/upload", upload.single("file"), (req, res) => {
+//   res.json(req.file);
+// });
 
 app.delete("/blog/delete/:id", async (req, res) => {
   const result = await Blog.findByIdAndDelete(req.params.id);

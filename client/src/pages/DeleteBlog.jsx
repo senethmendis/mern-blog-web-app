@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import BlogCard from "../components/BlogCard";
 import { blogImg } from "../assets";
 import Header from "../components/Header";
@@ -38,7 +38,7 @@ const DeleteBlog = () => {
   return (
     <section>
       <Header />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {blogData.map((blog) => (
           <BlogCard
             key={blog._id}

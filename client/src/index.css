@@ -30,7 +30,7 @@ section {
 }
 
 .sub-btn {
-  @apply font-semibold w-full hover:bg-blue-700 bg-neutral-900 border border-white/15 py-2 rounded-full my-3;
+  @apply font-semibold w-full flex justify-center items-center hover:bg-blue-700 bg-neutral-900 border border-white/15 py-2 rounded-full my-3;
 }
 .del-btn {
   @apply font-semibold w-full hover:bg-red-700 bg-neutral-900 border border-white/15 py-2 rounded-full my-3;

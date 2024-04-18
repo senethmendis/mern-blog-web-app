@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../components/Header";
 import BlogPostGrid from "../components/BlogPostGrid";
 import { NewsLetter } from "../components/NewsLetter";

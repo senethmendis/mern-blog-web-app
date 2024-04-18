@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BlogCard = ({
   blogImg,
@@ -7,9 +8,10 @@ const BlogCard = ({
   description,
   isDel,
   onClickDelete,
+  blogObj,
 }) => {
   return (
-    <div className="w-full md:scale-[85%] md:hover:scale-90 transition-all duration-100">
+    <div className="flex flex-col w-full md:scale-[85%] md:hover:scale-90 transition-all duration-100">
       <img src={blogImg} alt="blogimg" className="rounded-2xl" />
       <h3 className="text-2xl font-semibold capitalize py-2">{title}</h3>
       <p className="text-lg text-neutral-600">{description}</p>
@@ -22,7 +24,12 @@ const BlogCard = ({
           </button>
         </div>
       ) : (
-        <button className="sub-btn">Read More</button>
+        <Link
+          to={`/viewblog/${encodeURIComponent(JSON.stringify(blogObj))}`}
+          className="sub-btn"
+        >
+          Read More
+        </Link>
       )}
     </div>
   );

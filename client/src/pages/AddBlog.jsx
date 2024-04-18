@@ -95,7 +95,7 @@ const AddBlog = () => {
             cols="30"
             rows="10"
           ></textarea>
-          <input type="file" />
+          <input type="file" name="avatar" />
           <button type="submit" className="sub-btn ">
             Post Blog
           </button>

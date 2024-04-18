@@ -29,6 +29,7 @@ const BlogPostGrid = () => {
           description={blog.title}
           timestamp={blog.timestamp}
           title={blog.title}
+          blogObj={blog}
         />
       ))}
     </section>

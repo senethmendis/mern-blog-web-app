@@ -40,7 +40,7 @@ const Header = ({ isBannerVisible, secondBannerImg, variableImg }) => {
         </div>
       </header>
       {isBannerVisible && (
-        <ArticalBanner variableImg={variableImg} imgPath={""} />
+        <ArticalBanner variableImg={variableImg} imgPath={secondBannerImg} />
       )}
     </>
   );

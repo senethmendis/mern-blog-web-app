@@ -17,7 +17,9 @@ const BlogCard = ({
       <img src={blogImg} alt="blogimg" className="rounded-2xl" />
       <h3 className="text-2xl font-semibold capitalize py-2">{title}</h3>
       <p className="text-lg text-neutral-600">{description}</p>
-      <span>{new Date(timestamp * 1000).toDateString()}</span>
+      <span className="py-1.5">
+        {new Date(timestamp * 1000).toDateString()}
+      </span>
       {isDel ? (
         <div className="w-full">
           <button className="sub-btn">Read More</button>

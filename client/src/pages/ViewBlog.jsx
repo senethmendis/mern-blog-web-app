@@ -10,7 +10,11 @@ const ViewBlog = () => {
   console.log(newObj);
   return (
     <section>
-      <Header isBannerVisible={true} secondBannerImg={Avatar} />
+      <Header
+        isBannerVisible={true}
+        variableImg={false}
+        secondBannerImg={Avatar}
+      />
       <div className="max-w-[1100px] mx-auto flex flex-col px-3 gap-4 py-5">
         <h1 className="text-4xl font-semibold py-3">{newObj.title}</h1>
         <div className="flex gap-5 flex-row justify-start items-center">

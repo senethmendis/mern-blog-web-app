@@ -10,6 +10,8 @@ const BlogCard = ({
   onClickDelete,
   blogObj,
 }) => {
+  if (description.length > 10) description = description.substring(0, 78);
+
   return (
     <div className="flex flex-col w-full md:scale-[85%] md:hover:scale-90 transition-all duration-100">
       <img src={blogImg} alt="blogimg" className="rounded-2xl" />

@@ -26,7 +26,7 @@ const BlogPostGrid = () => {
         <BlogCard
           key={blog._id}
           blogImg={blogImg}
-          description={blog.title}
+          description={blog.description}
           timestamp={blog.timestamp}
           title={blog.title}
           blogObj={blog}

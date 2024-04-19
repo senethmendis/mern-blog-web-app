@@ -18,7 +18,7 @@ const Navbar = () => {
       </ul>
 
       <div className="flex gap-3 items-center">
-        <Link to="profile">
+        <Link to="/profile">
           <img src={Avatar} alt="avatar" className="avatar" />
         </Link>
         <LuBellDot size={20} />

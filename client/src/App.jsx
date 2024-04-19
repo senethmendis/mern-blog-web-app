@@ -14,7 +14,6 @@ function App() {
         <Route path="/deleteblog" element={<DeleteBlog />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/viewblog/:blogObj" element={<ViewBlog />} />
-        {/* <Route path="/profile" element={<Profile />} /> */}
       </Routes>
     </>
   );

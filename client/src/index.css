@@ -35,3 +35,8 @@ section {
 .del-btn {
   @apply font-semibold w-full hover:bg-red-700 bg-neutral-900 border border-white/15 py-2 rounded-full my-3;
 }
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}

@@ -7,7 +7,7 @@ export const NavbarItem = [
   {
     id: 2,
     navName: "Blog",
-    navlink: "#blog",
+    navlink: "/allblogs",
   },
   {
     id: 3,
